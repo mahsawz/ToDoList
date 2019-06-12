@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <link rel="stylesheet" type="text/css" href="todo.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body background="back.jpg" class="body">
+
+<!-- Navbar -->
+<div class=" topnav notranslate">
+    <a href="index.html" class="fa fa-home homeBtn w3-xlarge" style="margin-left: 1rem ; color: white"></a>
+    <a class="subject"> To Do List</a>
+    <div class="dropdown">
+        <button class="dropbtn">Profile
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">boards</a>
+            <a href="#">account</a>
+            <a href="#">setting</a>
+            <a href="#">log out</a>
+        </div>
+    </div>
+</div>
+
+<!-- To Do card -->
+<div class="row" id="parent">
+    <div class="todo">
+        <input class="title" value="To Do" maxlength="20">
+        <hr class="hr">
+        <ul class="ul" id="UL"></ul>
+        <div class="addInput">
+            <input class="input" type="text" id="Input" placeholder="To do ...">
+            <span class="addBtn" onclick="newElement(event)"> Add </span>
+        </div>
+    </div>
+</div>
+
+<!-- Create new To Do card -->
+<button id="createBtn" class="create"> Create To Do card</button>
+
+<script src="todo.js"></script>
+
+</body>
+</html>
